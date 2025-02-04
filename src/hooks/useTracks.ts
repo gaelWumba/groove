@@ -11,13 +11,11 @@ const useTracks = () => {
     const fetchTracks = async () => {
       try {
         setLoading(true);
-        setError(null);  // Reset error state
+        setError(null);
 
-        // Fetch tracks (search query for tracks, adjust as needed)
-        const response = await axios.get('/deezer/search?q=album&type=track'); // Example query for tracks
+        const response = await axios.get('/deezer/search?q=album&type=track');
         if (response.data && response.data.data) {
-          // Limit the number of tracks as needed
-          setTracks(response.data.data.slice(0, 20));  // Adjust the number of tracks
+          setTracks(response.data.data.slice(0, 20));
         } else {
           setError('No tracks found.');
         }

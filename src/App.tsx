@@ -26,7 +26,7 @@ const App: React.FC = () => {
       {/* Main Content */}
       <div className="flex-1 p-6">
         {loading ? (
-          <p className="text-center text-gray-400">Loading tracks...</p>
+          <p className="text-center text-gray-400">Chargement...</p>
         ) : error ? (
           <p className="text-center text-red-500">{error}</p>
         ) : (
