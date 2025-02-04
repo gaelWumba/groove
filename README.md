@@ -28,4 +28,4 @@ GROOVE is a modern music discovery app that lets users explore and play trending
 git clone https://github.com/gaelWumba/groove  
 
 npm install  
-npm start  
+npm run dev  
